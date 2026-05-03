@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <div class="auth-box">
+      <span class="auth-title">Account</span>
+      <input id="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <button id="signupBtn">Sign Up</button>
+      <button id="loginBtn">Login</button>
+      <button id="logoutBtn">Logout</button>
+    </div>
+    <header class="header">
+      <h1>Internship Tracker</h1>
+      <div class="stats">
+        <div class="stat"><span id="total">0</span><small>Total</small></div>
+        <div class="stat applied"><span id="appliedCount">0</span><small>Applied</small></div>
+        <div class="stat interview"><span id="interviewCount">0</span><small>Interview</small></div>
+        <div class="stat rejected"><span id="rejectedCount">0</span><small>Rejected</small></div>
+      </div>
+    </header>
+    <section class="card form-card">
+      <div class="grid">
+        <input id="company" placeholder="Company" />
+        <input id="role" placeholder="Role" />
+        <select id="status">
+          <option value="Applied">Applied</option>
+          <option value="Interview">Interview</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+        <input id="date" type="date" />
+        <input id="notes" placeholder="Notes (optional)" />
+        <button id="addBtn">Add</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div class="filters">
+        <button class="chip active" data-filter="All">All</button>
+        <button class="chip" data-filter="Applied">Applied</button>
+        <button class="chip" data-filter="Interview">Interview</button>
+        <button class="chip" data-filter="Rejected">Rejected</button>
+      </div>
+      <input id="search" class="search" placeholder="Search company or role…" />
+    </section>
+
+    <section id="list" class="list"></section>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>>
