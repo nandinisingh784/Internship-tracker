@@ -13,7 +13,8 @@ const firebaseConfig = {
   storageBucket: "internship-tracker-9a46f.firebasestorage.app",
   messagingSenderId: "378045976894",
   appId: "1:378045976894:web:3bdd2bd7290ca72469dc6f",
-  measurementId: "G-Y3PY6Q18HR"
+  measurementId: "G-Y3PY6Q18HR",
+ databaseURL: "https://internship-tracker-9a46f-default-rtdb.asia-southeast1.firebasedatabase.app",
 };
 
 const app = initializeApp(firebaseConfig);
